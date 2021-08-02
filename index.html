@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="index.css">
   <title>where is the country 🚩</title>
 </head>
@@ -29,20 +30,24 @@
     </div>
   </nav>
   <main>
-    <div class="wrap_item">
-      <img src="https://restcountries.eu/data/hkg.svg" alt="South Korea Flag">
-      <div class="info_item">
-        <strong>South Korea</strong>
-        <dl>
-          <dt>인구</dt>
-          <dd>3,000,000</dd>
-          <dt>Region</dt>
-          <dd>Asia</dd>
-          <dt>Capital</dt>
-          <dd>Seoul</dd>
-        </dl>
-      </div>
-    </div>
+      <ul>
+        <li class="wrap_item">
+          <a href="" class="link_item">
+            <img src="https://restcountries.eu/data/hkg.svg" alt="South Korea Flag">
+            <div class="info_item">
+              <strong>South Korea</strong>
+              <dl>
+                <dt>인구</dt>
+                <dd>3,000,000</dd>
+                <dt>Region</dt>
+                <dd>Asia</dd>
+                <dt>Capital</dt>
+                <dd>Seoul</dd>
+              </dl>
+            </div>
+          </a>
+        </li>
+      </ul>
   </main>
   <script>
     async function getCountries() {
