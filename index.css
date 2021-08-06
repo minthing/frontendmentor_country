@@ -1,5 +1,4 @@
-
-:root[data-theme=light]{
+root[data-theme=light]{
   --background : hsl(0, 0%, 98%);
   --text:hsl(200, 15%, 8%);
   --element: hsl(0, 0%, 100%);
@@ -8,11 +7,39 @@
   :root[data-theme=dark]{
   --background : hsl(207, 26%, 17%);
   --text:hsl(0, 0%, 100%);
-  --element:hsl(209, 23%, 22%)
+  --element: hsl(209, 23%, 22%);
   }
   
   html, body{
     height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: var(--element);
+    color: var(--text);
+    line-height: 75px;
+    padding: 0 5% 0;
+    -webkit-box-shadow: 2px 5px 12px 2px rgba(0,0,0,0.63); 
+    box-shadow: 2px 5px 12px 2px rgba(0,0,0,0.63);
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .text_theme{
+    padding-left: 7px;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5% 10px 5%;
   }
   
   .wrap_content{
@@ -28,7 +55,39 @@
     column-gap: 3rem;
   }
   
+  .list_item{
+    background: var(--element);
+  }
+  
+  .link_item{
+    display: block;
+  }
+  
   .wrap_item img{
     width: 100%;
+  }
+  
+  .info_item{
+    padding: 10% 5% 12% 5%;
+    color: #fff;
+  }
+  
+  .info_item strong{
+    font-weight: 700;
+    font: 1.1rem;
+  }
+  
+  .info_item .inner_info{
+    padding-top: 10px;
+  }
+  
+  .info_item dl{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 1px;
+  }
+  
+  .info_item dt{
+    font-weight: 700;
   }
   
